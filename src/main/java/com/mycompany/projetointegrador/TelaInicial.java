@@ -5,6 +5,7 @@
 package com.mycompany.projetointegrador;
 
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 /**
  *
@@ -19,6 +20,11 @@ public class TelaInicial extends javax.swing.JFrame {
         super("Tela Inicial");
         initComponents();
         setLocationRelativeTo(null);
+        try{
+            UIManager.setLookAndFeel(
+                    UIManager.getSystemLookAndFeelClassName()
+            );
+        }catch(Exception e){}
     }
 
     /**
