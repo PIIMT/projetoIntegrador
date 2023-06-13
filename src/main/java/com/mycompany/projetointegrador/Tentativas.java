@@ -14,6 +14,10 @@ public class Tentativas {
         this.pontos = pontos;
     }
 
+    public Tentativas(String nome) {
+        this.nome = nome;
+    }
+
     public String getNome() {
         return nome;
     }

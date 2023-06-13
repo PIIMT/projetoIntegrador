@@ -4,6 +4,8 @@
  */
 package com.mycompany.projetointegrador;
 
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -120,8 +122,9 @@ public class RemoverPergunta extends javax.swing.JFrame {
             int id = Integer.parseInt(idPerguntaTextField.getText());
             var p = new Questao(id);
             dao.removerPergunta(p);
+            JOptionPane.showMessageDialog(null, "Questão removida com sucesso!");
         }catch(Exception e){
-        
+            JOptionPane.showMessageDialog(null, "Algo deu errado, tente novamente.");
         }
     }//GEN-LAST:event_removerButtonActionPerformed
 

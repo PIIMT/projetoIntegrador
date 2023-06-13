@@ -41,7 +41,7 @@ public class FrameQuiz9 extends javax.swing.JFrame {
             rs.close();
             
         } catch (Exception ex) {
-            Logger.getLogger(FrameQuiz1.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FrameQuiz9.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -67,8 +67,9 @@ public class FrameQuiz9 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(69, 134, 198));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Questão 9", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Questão 9", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        respostaq1RadioButton1.setBackground(new java.awt.Color(69, 134, 198));
         buttonGroup1.add(respostaq1RadioButton1);
         respostaq1RadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         respostaq1RadioButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -79,6 +80,7 @@ public class FrameQuiz9 extends javax.swing.JFrame {
             }
         });
 
+        respostaq1RadioButton2.setBackground(new java.awt.Color(69, 134, 198));
         buttonGroup1.add(respostaq1RadioButton2);
         respostaq1RadioButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         respostaq1RadioButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,6 +91,7 @@ public class FrameQuiz9 extends javax.swing.JFrame {
             }
         });
 
+        respostaq1RadioButton3.setBackground(new java.awt.Color(69, 134, 198));
         buttonGroup1.add(respostaq1RadioButton3);
         respostaq1RadioButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         respostaq1RadioButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,6 +102,7 @@ public class FrameQuiz9 extends javax.swing.JFrame {
             }
         });
 
+        respostaq1RadioButton4.setBackground(new java.awt.Color(69, 134, 198));
         buttonGroup1.add(respostaq1RadioButton4);
         respostaq1RadioButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         respostaq1RadioButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -224,7 +228,7 @@ public class FrameQuiz9 extends javax.swing.JFrame {
                 ContaCertas.decrementarPontuacao(pont);
             }
         }catch (Exception ex) {
-            Logger.getLogger(FrameQuiz10.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FrameQuiz9.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_voltaButtonActionPerformed
 
@@ -251,7 +255,7 @@ public class FrameQuiz9 extends javax.swing.JFrame {
             }
             resposta.close();
         } catch (Exception ex) {
-            Logger.getLogger(FrameQuiz10.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FrameQuiz9.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_proximoButtonActionPerformed
 

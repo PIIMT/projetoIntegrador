@@ -4,6 +4,8 @@
  */
 package com.mycompany.projetointegrador;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 23.01362-0
@@ -172,6 +174,7 @@ public class AtualizarPergunta extends javax.swing.JFrame {
         
         dao.atualizarPergunta(p);
         
+        JOptionPane.showMessageDialog(null, "Questão atualizada com sucesso!");
         }catch(Exception e){
             
         }

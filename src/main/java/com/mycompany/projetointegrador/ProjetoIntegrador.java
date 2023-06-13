@@ -11,6 +11,7 @@ package com.mycompany.projetointegrador;
 public class ProjetoIntegrador {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        TelaDeLogin tdl = new TelaDeLogin();
+        tdl.setVisible(true);
     }
 }

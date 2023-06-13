@@ -4,7 +4,7 @@
  */
 package com.mycompany.projetointegrador;
 
-import javax.swing.DefaultComboBoxModel;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -192,8 +192,9 @@ public class AdicionarPergunta extends javax.swing.JFrame {
         
         dao.adicionarPergunta(p);
         
+        JOptionPane.showMessageDialog(null, "Questão adicionada com sucesso!");
         }catch(Exception e){
-            
+            JOptionPane.showMessageDialog(null, "Algo deu errado, tente novamente.");
         }
     }//GEN-LAST:event_adicionarButtonActionPerformed
 

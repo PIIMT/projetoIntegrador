@@ -16,10 +16,19 @@ public class TentativasDAO {
         }
     }
     public ResultSet obterTentativas()throws Exception{
-        String sql = "select * from Tentativas;";
+        String sql = "select * from Tentativas order by pontos_total desc;";
         var conexao = ConnectionFactory.obterConexao();
         var ps = conexao.prepareStatement(sql);
         
         return ps.executeQuery();
+    }
+    public void removerTentativa(Tentativas t)throws Exception{
+        String sql = "delete from Tentativas where nome = ?";
+        
+        try(var conexao = ConnectionFactory.obterConexao();
+                var ps = conexao.prepareStatement(sql)){
+            ps.setString(1, t.getNome());
+            ps.execute();
+        }
     }
 }

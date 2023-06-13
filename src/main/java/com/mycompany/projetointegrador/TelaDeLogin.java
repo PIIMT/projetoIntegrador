@@ -44,10 +44,10 @@ public class TelaDeLogin extends javax.swing.JFrame {
         senhaPasswordField = new javax.swing.JPasswordField();
         loginButton = new javax.swing.JButton();
         cadastrarButton = new javax.swing.JButton();
-        textinhoTextField = new javax.swing.JTextField();
         sairButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,19 +78,6 @@ public class TelaDeLogin extends javax.swing.JFrame {
             }
         });
 
-        textinhoTextField.setEditable(false);
-        textinhoTextField.setBackground(new java.awt.Color(255, 255, 255, 0));
-        textinhoTextField.setForeground(new java.awt.Color(0, 0, 204));
-        textinhoTextField.setText("Não tem cadastro ainda?");
-        textinhoTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        textinhoTextField.setDisabledTextColor(new java.awt.Color(51, 0, 255));
-        textinhoTextField.setFocusable(false);
-        textinhoTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textinhoTextFieldActionPerformed(evt);
-            }
-        });
-
         sairButton.setText("Sair");
         sairButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         sairButton.addActionListener(new java.awt.event.ActionListener() {
@@ -100,6 +87,10 @@ public class TelaDeLogin extends javax.swing.JFrame {
         });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo2 transparente.png"))); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Não possui um cadastro?");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -116,11 +107,11 @@ public class TelaDeLogin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(loginButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textinhoTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cadastrarButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sairButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(senhaPasswordField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(loginTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(loginTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -139,9 +130,9 @@ public class TelaDeLogin extends javax.swing.JFrame {
                         .addComponent(senhaPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)
-                        .addComponent(textinhoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
                         .addComponent(cadastrarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(sairButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -199,10 +190,6 @@ public class TelaDeLogin extends javax.swing.JFrame {
 
     }//GEN-LAST:event_loginTextFieldActionPerformed
 
-    private void textinhoTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textinhoTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textinhoTextFieldActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -243,11 +230,11 @@ public class TelaDeLogin extends javax.swing.JFrame {
     private javax.swing.JButton cadastrarButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton loginButton;
     private javax.swing.JTextField loginTextField;
     private javax.swing.JButton sairButton;
     private javax.swing.JPasswordField senhaPasswordField;
-    private javax.swing.JTextField textinhoTextField;
     // End of variables declaration//GEN-END:variables
 }
