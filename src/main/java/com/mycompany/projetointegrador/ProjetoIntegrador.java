@@ -11,7 +11,11 @@ package com.mycompany.projetointegrador;
 public class ProjetoIntegrador {
 
     public static void main(String[] args) {
+        try{
         TelaDeLogin tdl = new TelaDeLogin();
         tdl.setVisible(true);
+        }catch(Exception e){
+        e.printStackTrace();
+        }
     }
 }
