@@ -8,3 +8,5 @@ IF RA IS NOT WORKING DURING REGISTRATION PART:
 RA: XX.XXXXX-X (8 digits with . and -)
 
 created only for learning purposes
+
+(Due to email issues, all commit messages were promptly deleted from main repo) - 03/15/2024
